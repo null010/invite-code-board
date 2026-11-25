@@ -76,9 +76,11 @@
     async function load(){ const r=await fetch(DATA_URL+"?t="+Date.now(),{cache:"no-store"}); if(!r.ok)throw Error(r.status); payload=await r.json(); render(); }
     document.querySelector("#filters").addEventListener("click",e=>{const b=e.target.closest("[data-filter]");if(b){filter=b.dataset.filter;render();}});
     document.querySelector("#board").addEventListener("click",e=>{const c=e.target.closest("[data-copy]"),m=e.target.closest("[data-tried]");if(c){copy(c.dataset.copy);return;}if(m){const code=m.dataset.tried;tried=tried.includes(code)?tried.filter(x=>x!==code):[...tried,code];try{localStorage.setItem(TRIED_KEY,JSON.stringify(tried));}catch{}render();}});
-    const top=document.querySelector("#scrollTop"); addEventListener("scroll",()=>top.classList.toggle("show",scrollY>400),{passive:true}); top.addEventListener("click",()=>scrollTo({top:0,behavior:"smooth"}));
+    const scrollButton=document.querySelector("#scrollTop"); addEventListener("scroll",()=>scrollButton.classList.toggle("show",scrollY>400),{passive:true}); scrollButton.addEventListener("click",()=>scrollTo({top:0,behavior:"smooth"}));
     load().catch(()=>{document.querySelector("#updated").textContent="载入失败";document.querySelector("#board").innerHTML='<div class="empty">数据加载失败，请稍后重试</div>';}); setInterval(()=>load().catch(()=>{}),60000);
   </script>
 </body>
 </html>
+
+
 

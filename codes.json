@@ -1,11 +1,316 @@
 {
-  "lastUpdated": "2026-11-25 19:00 北京时间",
-  "lastSinceId": "0",
+  "lastUpdated": "2026-11-25 20:36 北京时间",
+  "lastSinceId": "2125523830584250540",
   "codes": [
-    {"code":"A7K9P2","postId":"demo-1","author":"community_demo","postUrl":"https://example.com/","postedAt":"2026-11-25 18:40:00 北京时间","replyCount":0,"status":"maybe_available"},
-    {"code":"M-4Q8ZTR","postId":"demo-2","author":"share_user","postUrl":"https://example.com/","postedAt":"2026-11-25 17:18:00 北京时间","replyCount":0,"status":"maybe_available","expires":"2026-11-27 23:59"},
-    {"code":"Q2N8LX","postId":"demo-3","author":"community_demo","postUrl":"https://example.com/","postedAt":"2026-11-24 22:06:00 北京时间","replyCount":3,"status":"maybe_used"},
-    {"code":"R5D1VC","postId":"demo-4","author":"community_demo","postUrl":"https://example.com/","postedAt":"2026-11-24 20:11:00 北京时间","replyCount":8,"status":"confirmed_used"}
+    {
+      "code": "TNYA5J",
+      "postId": "2125523830584250540",
+      "author": "ai_bange",
+      "postUrl": "https://x.com/ai_bange/status/2125523830584250540",
+      "postedAt": "2026-11-25 17:35:00 北京时间",
+      "postedAtUtc": "2026-11-25T09:35:00.000Z",
+      "replyCount": 0,
+      "status": "maybe_available",
+      "expires": "2026-11-27 17:31"
+    },
+    {
+      "code": "JX3D4X",
+      "postId": "2125444235793142144",
+      "author": "susubun_com",
+      "postUrl": "https://x.com/susubun_com/status/2125444235793142144",
+      "postedAt": "2026-11-25 12:19:00 北京时间",
+      "postedAtUtc": "2026-11-25T04:19:00.000Z",
+      "replyCount": 0,
+      "status": "maybe_available"
+    },
+    {
+      "code": "PZN8ZH",
+      "postId": "2125444235793142144",
+      "author": "susubun_com",
+      "postUrl": "https://x.com/susubun_com/status/2125444235793142144",
+      "postedAt": "2026-11-25 12:19:00 北京时间",
+      "postedAtUtc": "2026-11-25T04:19:00.000Z",
+      "replyCount": 0,
+      "status": "maybe_available"
+    },
+    {
+      "code": "KN5MXB",
+      "postId": "2125444235793142144",
+      "author": "susubun_com",
+      "postUrl": "https://x.com/susubun_com/status/2125444235793142144",
+      "postedAt": "2026-11-25 12:19:00 北京时间",
+      "postedAtUtc": "2026-11-25T04:19:00.000Z",
+      "replyCount": 0,
+      "status": "maybe_available"
+    },
+    {
+      "code": "MT46KW",
+      "postId": "2125444235793142144",
+      "author": "susubun_com",
+      "postUrl": "https://x.com/susubun_com/status/2125444235793142144",
+      "postedAt": "2026-11-25 12:19:00 北京时间",
+      "postedAtUtc": "2026-11-25T04:19:00.000Z",
+      "replyCount": 0,
+      "status": "maybe_available"
+    },
+    {
+      "code": "BHH58R",
+      "postId": "2125444235793142144",
+      "author": "susubun_com",
+      "postUrl": "https://x.com/susubun_com/status/2125444235793142144",
+      "postedAt": "2026-11-25 12:19:00 北京时间",
+      "postedAtUtc": "2026-11-25T04:19:00.000Z",
+      "replyCount": 0,
+      "status": "maybe_available"
+    },
+    {
+      "code": "QQSEM3",
+      "postId": "2125444235793142144",
+      "author": "susubun_com",
+      "postUrl": "https://x.com/susubun_com/status/2125444235793142144",
+      "postedAt": "2026-11-25 12:19:00 北京时间",
+      "postedAtUtc": "2026-11-25T04:19:00.000Z",
+      "replyCount": 0,
+      "status": "maybe_available"
+    },
+    {
+      "code": "Y9Z3SR",
+      "postId": "2125444235793142144",
+      "author": "susubun_com",
+      "postUrl": "https://x.com/susubun_com/status/2125444235793142144",
+      "postedAt": "2026-11-25 12:19:00 北京时间",
+      "postedAtUtc": "2026-11-25T04:19:00.000Z",
+      "replyCount": 0,
+      "status": "maybe_available"
+    },
+    {
+      "code": "P3USNM",
+      "postId": "2125444235793142144",
+      "author": "susubun_com",
+      "postUrl": "https://x.com/susubun_com/status/2125444235793142144",
+      "postedAt": "2026-11-25 12:19:00 北京时间",
+      "postedAtUtc": "2026-11-25T04:19:00.000Z",
+      "replyCount": 0,
+      "status": "maybe_available"
+    },
+    {
+      "code": "A3DXTG",
+      "postId": "2125444235793142144",
+      "author": "susubun_com",
+      "postUrl": "https://x.com/susubun_com/status/2125444235793142144",
+      "postedAt": "2026-11-25 12:19:00 北京时间",
+      "postedAtUtc": "2026-11-25T04:19:00.000Z",
+      "replyCount": 0,
+      "status": "maybe_available"
+    },
+    {
+      "code": "Z8V6B9",
+      "postId": "2125444235793142144",
+      "author": "susubun_com",
+      "postUrl": "https://x.com/susubun_com/status/2125444235793142144",
+      "postedAt": "2026-11-25 12:19:00 北京时间",
+      "postedAtUtc": "2026-11-25T04:19:00.000Z",
+      "replyCount": 0,
+      "status": "maybe_available"
+    },
+    {
+      "code": "GU8J43",
+      "postId": "2125444235793142144",
+      "author": "susubun_com",
+      "postUrl": "https://x.com/susubun_com/status/2125444235793142144",
+      "postedAt": "2026-11-25 12:19:00 北京时间",
+      "postedAtUtc": "2026-11-25T04:19:00.000Z",
+      "replyCount": 0,
+      "status": "maybe_available"
+    },
+    {
+      "code": "PN37YP",
+      "postId": "2125444235793142144",
+      "author": "susubun_com",
+      "postUrl": "https://x.com/susubun_com/status/2125444235793142144",
+      "postedAt": "2026-11-25 12:19:00 北京时间",
+      "postedAtUtc": "2026-11-25T04:19:00.000Z",
+      "replyCount": 0,
+      "status": "maybe_available"
+    },
+    {
+      "code": "EHFGK4",
+      "postId": "2125444235793142144",
+      "author": "susubun_com",
+      "postUrl": "https://x.com/susubun_com/status/2125444235793142144",
+      "postedAt": "2026-11-25 12:19:00 北京时间",
+      "postedAtUtc": "2026-11-25T04:19:00.000Z",
+      "replyCount": 0,
+      "status": "maybe_available"
+    },
+    {
+      "code": "X8PVSU",
+      "postId": "2125444235793142144",
+      "author": "susubun_com",
+      "postUrl": "https://x.com/susubun_com/status/2125444235793142144",
+      "postedAt": "2026-11-25 12:19:00 北京时间",
+      "postedAtUtc": "2026-11-25T04:19:00.000Z",
+      "replyCount": 0,
+      "status": "maybe_available"
+    },
+    {
+      "code": "RU5AMH",
+      "postId": "2125444235793142144",
+      "author": "susubun_com",
+      "postUrl": "https://x.com/susubun_com/status/2125444235793142144",
+      "postedAt": "2026-11-25 12:19:00 北京时间",
+      "postedAtUtc": "2026-11-25T04:19:00.000Z",
+      "replyCount": 0,
+      "status": "maybe_available"
+    },
+    {
+      "code": "CS4XH2",
+      "postId": "2125444235793142144",
+      "author": "susubun_com",
+      "postUrl": "https://x.com/susubun_com/status/2125444235793142144",
+      "postedAt": "2026-11-25 12:19:00 北京时间",
+      "postedAtUtc": "2026-11-25T04:19:00.000Z",
+      "replyCount": 0,
+      "status": "maybe_available"
+    },
+    {
+      "code": "RDV9W5",
+      "postId": "2125444235793142144",
+      "author": "susubun_com",
+      "postUrl": "https://x.com/susubun_com/status/2125444235793142144",
+      "postedAt": "2026-11-25 12:19:00 北京时间",
+      "postedAtUtc": "2026-11-25T04:19:00.000Z",
+      "replyCount": 0,
+      "status": "maybe_available"
+    },
+    {
+      "code": "V4XR2W",
+      "postId": "2125444235793142144",
+      "author": "susubun_com",
+      "postUrl": "https://x.com/susubun_com/status/2125444235793142144",
+      "postedAt": "2026-11-25 12:19:00 北京时间",
+      "postedAtUtc": "2026-11-25T04:19:00.000Z",
+      "replyCount": 0,
+      "status": "maybe_available"
+    },
+    {
+      "code": "UTCDX2",
+      "postId": "2125444235793142144",
+      "author": "susubun_com",
+      "postUrl": "https://x.com/susubun_com/status/2125444235793142144",
+      "postedAt": "2026-11-25 12:19:00 北京时间",
+      "postedAtUtc": "2026-11-25T04:19:00.000Z",
+      "replyCount": 0,
+      "status": "maybe_available"
+    },
+    {
+      "code": "XS8TWF",
+      "postId": "2125444235793142144",
+      "author": "susubun_com",
+      "postUrl": "https://x.com/susubun_com/status/2125444235793142144",
+      "postedAt": "2026-11-25 12:19:00 北京时间",
+      "postedAtUtc": "2026-11-25T04:19:00.000Z",
+      "replyCount": 0,
+      "status": "maybe_available"
+    },
+    {
+      "code": "MJ8CWK",
+      "postId": "2125444235793142144",
+      "author": "susubun_com",
+      "postUrl": "https://x.com/susubun_com/status/2125444235793142144",
+      "postedAt": "2026-11-25 12:19:00 北京时间",
+      "postedAtUtc": "2026-11-25T04:19:00.000Z",
+      "replyCount": 0,
+      "status": "maybe_available"
+    },
+    {
+      "code": "Q6QBRB",
+      "postId": "2125444235793142144",
+      "author": "susubun_com",
+      "postUrl": "https://x.com/susubun_com/status/2125444235793142144",
+      "postedAt": "2026-11-25 12:19:00 北京时间",
+      "postedAtUtc": "2026-11-25T04:19:00.000Z",
+      "replyCount": 0,
+      "status": "maybe_available"
+    },
+    {
+      "code": "U6PGXK",
+      "postId": "2125444235793142144",
+      "author": "susubun_com",
+      "postUrl": "https://x.com/susubun_com/status/2125444235793142144",
+      "postedAt": "2026-11-25 12:19:00 北京时间",
+      "postedAtUtc": "2026-11-25T04:19:00.000Z",
+      "replyCount": 0,
+      "status": "maybe_available"
+    },
+    {
+      "code": "X2QSNV",
+      "postId": "2125444235793142144",
+      "author": "susubun_com",
+      "postUrl": "https://x.com/susubun_com/status/2125444235793142144",
+      "postedAt": "2026-11-25 12:19:00 北京时间",
+      "postedAtUtc": "2026-11-25T04:19:00.000Z",
+      "replyCount": 0,
+      "status": "maybe_available"
+    },
+    {
+      "code": "RHEDT4",
+      "postId": "2125444235793142144",
+      "author": "susubun_com",
+      "postUrl": "https://x.com/susubun_com/status/2125444235793142144",
+      "postedAt": "2026-11-25 12:19:00 北京时间",
+      "postedAtUtc": "2026-11-25T04:19:00.000Z",
+      "replyCount": 0,
+      "status": "maybe_available"
+    },
+    {
+      "code": "FG83KC",
+      "postId": "2125176786560676175",
+      "author": "tsaielio",
+      "postUrl": "https://x.com/tsaielio/status/2125176786560676175",
+      "postedAt": "2026-11-24 18:36:00 北京时间",
+      "postedAtUtc": "2026-11-24T10:36:00.000Z",
+      "replyCount": 0,
+      "status": "maybe_available",
+      "expires": "2026-11-26 18:35"
+    },
+    {
+      "code": "A7K9P2",
+      "postId": "demo-1",
+      "author": "community_demo",
+      "postUrl": "https://example.com/",
+      "postedAt": "2026-11-25 18:40:00 北京时间",
+      "replyCount": 0,
+      "status": "maybe_available"
+    },
+    {
+      "code": "M-4Q8ZTR",
+      "postId": "demo-2",
+      "author": "share_user",
+      "postUrl": "https://example.com/",
+      "postedAt": "2026-11-25 17:18:00 北京时间",
+      "replyCount": 0,
+      "status": "maybe_available",
+      "expires": "2026-11-27 23:59"
+    },
+    {
+      "code": "Q2N8LX",
+      "postId": "demo-3",
+      "author": "community_demo",
+      "postUrl": "https://example.com/",
+      "postedAt": "2026-11-24 22:06:00 北京时间",
+      "replyCount": 3,
+      "status": "maybe_used"
+    },
+    {
+      "code": "R5D1VC",
+      "postId": "demo-4",
+      "author": "community_demo",
+      "postUrl": "https://example.com/",
+      "postedAt": "2026-11-24 20:11:00 北京时间",
+      "replyCount": 8,
+      "status": "confirmed_used"
+    }
   ]
 }
 

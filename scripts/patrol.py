@@ -706,7 +706,7 @@ def configure_stdio() -> None:
 # 主流程
 # ---------------------------------------------------------------------------
 
-def run_patrol(posts_source: str, dry_run: bool = False) -> int:
+def run_patrol(posts_source: str, dry_run: bool = False, local_only: bool = False) -> int:
     configure_stdio()
     now = now_beijing()
     print(f"巡检开始：{format_last_updated(now)}")
@@ -718,14 +718,14 @@ def run_patrol(posts_source: str, dry_run: bool = False) -> int:
         )
 
     gh_token = os.environ.get("GITHUB_TOKEN", "").strip()
-    if not dry_run and not gh_token:
-        print("缺少环境变量 GITHUB_TOKEN（--dry-run 可不设）", file=sys.stderr)
+    if not dry_run and not local_only and not gh_token:
+        print("缺少环境变量 GITHUB_TOKEN（--dry-run 或 --local-only 可不设）", file=sys.stderr)
         return 1
 
     posts = load_posts(posts_source)
     print(f"读到 {len(posts)} 条浏览器抓来的帖子")
 
-    if gh_token:
+    if gh_token and not local_only:
         data, _sha = github_get_codes(gh_token)
     else:
         data = load_codes_public()
@@ -753,7 +753,6 @@ def run_patrol(posts_source: str, dry_run: bool = False) -> int:
         return 0
 
     message = f"chore: 巡检更新 codes.json（{new_data['lastUpdated']}）"
-    update_codes_with_retry(gh_token, new_data, message)
     local_codes = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "codes.json")
     try:
         with open(local_codes, "w", encoding="utf-8") as f:
@@ -761,6 +760,10 @@ def run_patrol(posts_source: str, dry_run: bool = False) -> int:
             f.write("\n")
     except Exception:
         pass
+    if local_only:
+        print(f"（--local-only：已写入本地 {local_codes}，跳过 GitHub 提交）")
+        return 0
+    update_codes_with_retry(gh_token, new_data, message)
     return 0
 
 
@@ -985,6 +988,7 @@ def main(argv: list[str] | None = None) -> int:
         help="bot 整理好的帖子 JSON 文件路径，或 - 表示从标准输入读取",
     )
     parser.add_argument("--dry-run", action="store_true", help="筛选并打印结果，不向 GitHub 提交")
+    parser.add_argument("--local-only", action="store_true", help="写入本地 codes.json，不向 GitHub 提交")
     parser.add_argument("--self-test", action="store_true", help="离线单元测试，不提交")
     parser.add_argument("--codes-json", help="自测时使用的本地 codes.json 路径；缺省则拉取线上文件")
     args = parser.parse_args(argv)
@@ -992,7 +996,7 @@ def main(argv: list[str] | None = None) -> int:
         return run_self_test(args.codes_json)
     if not args.posts:
         parser.error("请提供 --posts 文件（或 --self-test）")
-    return run_patrol(args.posts, dry_run=args.dry_run)
+    return run_patrol(args.posts, dry_run=args.dry_run, local_only=args.local_only)
 
 
 if __name__ == "__main__":

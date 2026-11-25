@@ -1,0 +1,11 @@
+{
+  "lastUpdated": "2026-11-25 19:00 北京时间",
+  "lastSinceId": "0",
+  "codes": [
+    {"code":"A7K9P2","postId":"demo-1","author":"community_demo","postUrl":"https://example.com/","postedAt":"2026-11-25 18:40:00 北京时间","replyCount":0,"status":"maybe_available"},
+    {"code":"M-4Q8ZTR","postId":"demo-2","author":"share_user","postUrl":"https://example.com/","postedAt":"2026-11-25 17:18:00 北京时间","replyCount":0,"status":"maybe_available","expires":"2026-11-27 23:59"},
+    {"code":"Q2N8LX","postId":"demo-3","author":"community_demo","postUrl":"https://example.com/","postedAt":"2026-11-24 22:06:00 北京时间","replyCount":3,"status":"maybe_used"},
+    {"code":"R5D1VC","postId":"demo-4","author":"community_demo","postUrl":"https://example.com/","postedAt":"2026-11-24 20:11:00 北京时间","replyCount":8,"status":"confirmed_used"}
+  ]
+}
+

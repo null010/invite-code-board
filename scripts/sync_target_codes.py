@@ -93,12 +93,16 @@ def main() -> int:
     target = read_json_url(args.source_url)
     merged, duplicate_count = merge_codes(target, local)
 
-    old_text = output_path.read_text(encoding="utf-8")
-    new_text = json.dumps(merged, ensure_ascii=False, indent=2) + "\n"
-    if json.loads(old_text) == merged:
+    # 目标站点的 lastUpdated 可能变化，但如果邀请码和状态都没变化，
+    # 不要为了时间戳制造一条无意义的 Git 提交。
+    if (
+        local.get("codes") == merged.get("codes")
+        and str(local.get("lastSinceId")) == str(merged.get("lastSinceId"))
+    ):
         print(f"没有变化：本地 {len(local.get('codes') or [])} 条，目标 {len(target['codes'])} 条，重复 {duplicate_count} 条")
         return 0
 
+    new_text = json.dumps(merged, ensure_ascii=False, indent=2) + "\n"
     output_path.write_text(new_text, encoding="utf-8")
     print(f"已合并：本地 {len(local.get('codes') or [])} 条 + 目标 {len(target['codes'])} 条")
     print(f"去重 {duplicate_count} 条，最终 {len(merged['codes'])} 条")

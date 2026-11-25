@@ -1,7 +1,39 @@
 {
-  "lastUpdated": "2026-11-25 20:44 北京时间",
-  "lastSinceId": "2125570574768574614",
+  "lastUpdated": "2026-11-26 05:59 北京时间",
+  "lastSinceId": "2125636173850968164",
   "codes": [
+    {
+      "code": "UJSBEG",
+      "postId": "2125602099316855148",
+      "author": "yituihi",
+      "postUrl": "https://x.com/yituihi/status/2125602099316855148",
+      "postedAt": "2026-11-25 22:46:46 北京时间",
+      "postedAtUtc": "2026-11-25T14:46:46.000Z",
+      "replyCount": 4,
+      "status": "maybe_used"
+    },
+    {
+      "code": "BC5RKZ",
+      "postId": "2125599331877269732",
+      "author": "SSVDVT",
+      "postUrl": "https://x.com/SSVDVT/status/2125599331877269732",
+      "postedAt": "2026-11-25 22:35:47 北京时间",
+      "postedAtUtc": "2026-11-25T14:35:47.000Z",
+      "replyCount": 3,
+      "status": "maybe_used",
+      "expires": "2026-11-27 22:07"
+    },
+    {
+      "code": "9HRUE3",
+      "postId": "2125598146088841313",
+      "author": "daiguaxiaojian",
+      "postUrl": "https://x.com/daiguaxiaojian/status/2125598146088841313",
+      "postedAt": "2026-11-25 22:31:04 北京时间",
+      "postedAtUtc": "2026-11-25T14:31:04.000Z",
+      "replyCount": 1,
+      "status": "maybe_used",
+      "expires": "2026-11-27 22:30"
+    },
     {
       "code": "8YG2W2",
       "postId": "2125568772081864837",

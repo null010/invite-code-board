@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="社区邀请码收集看板，支持复制、筛选和本地试用标记。">
+  <title>邀请码社区看板</title>
+  <style>
+    :root { --bg:#f5f5f7; --surface:#fff; --ink:#1d1d1f; --muted:#6e6e73; --subtle:#aeaeb2; --border:#e5e5ea; --primary:#5856d6; --primary-soft:rgba(88,86,214,.1); --success:#34c759; --success-soft:rgba(52,199,89,.1); --warn:#ff9500; --danger:#ff3b30; --radius:14px; --shadow:0 2px 12px rgba(0,0,0,.05); }
+    @media (prefers-color-scheme:dark) { :root { --bg:#000; --surface:#1c1c1e; --ink:#f5f5f7; --muted:#98989d; --subtle:#636366; --border:#38383a; --primary:#7d7aff; --primary-soft:rgba(125,122,255,.15); --success:#30d158; --success-soft:rgba(48,209,88,.15); --warn:#ffd60a; --danger:#ff453a; --shadow:0 2px 12px rgba(0,0,0,.35); } }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    html { scroll-behavior:smooth; }
+    body { background:var(--bg); color:var(--ink); font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif; -webkit-font-smoothing:antialiased; }
+    .hero { position:relative; overflow:hidden; padding:24px 16px 34px; text-align:center; color:#fff; background:linear-gradient(145deg,#5856d6,#af52de); }
+    .hero:before { content:""; position:absolute; inset:0; background:radial-gradient(ellipse at 25% 0%,rgba(255,255,255,.14),transparent 50%),radial-gradient(ellipse at 75% 100%,rgba(255,255,255,.08),transparent 50%); }
+    .hero-inner { position:relative; max-width:620px; margin:auto; }
+    .logo { display:inline-flex; width:36px; height:36px; align-items:center; justify-content:center; margin-bottom:8px; border-radius:11px; background:rgba(255,255,255,.18); font-size:20px; }
+    h1 { font-size:1.35rem; letter-spacing:-.03em; }
+    .tagline { color:rgba(255,255,255,.75); font-size:.82rem; line-height:1.5; }
+    .stats-wrap { position:relative; z-index:2; max-width:820px; margin:-18px auto 0; padding:0 16px; }
+    .stats { display:grid; grid-template-columns:repeat(4,1fr); gap:1px; overflow:hidden; border-radius:var(--radius); background:var(--border); box-shadow:0 8px 30px rgba(0,0,0,.1); }
+    .stat { padding:9px 6px; text-align:center; background:var(--surface); }
+    .stat-value { font-size:1.15rem; font-weight:800; line-height:1.2; font-variant-numeric:tabular-nums; }
+    .stat-value.primary { color:var(--primary); } .stat-value.success { color:var(--success); } .stat-value.warn { color:var(--warn); }
+    .stat-label { margin-top:2px; color:var(--muted); font-size:.72rem; font-weight:700; }
+    .container { max-width:820px; margin:auto; padding:14px 16px 0; }
+    .filters { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:10px; }
+    .chip { border:1.5px solid var(--border); border-radius:999px; padding:6px 13px; color:var(--muted); background:var(--surface); cursor:pointer; font:inherit; font-size:.82rem; font-weight:700; }
+    .chip:hover { border-color:var(--primary); color:var(--ink); } .chip[aria-pressed=true] { border-color:transparent; color:#fff; background:var(--primary); }
+    .board { width:max-content; max-width:100%; overflow:hidden; border:1px solid var(--border); border-radius:10px; background:var(--surface); }
+    .board-cols { display:grid; grid-template-columns:48px 108px 4.8em minmax(6.5em,12em) 2.8em 28px; column-gap:8px; align-items:center; padding:0 10px; }
+    .head { position:sticky; top:0; z-index:4; height:28px; border-bottom:1px solid var(--border); color:var(--subtle); background:var(--surface); font-size:.68rem; font-weight:800; }
+    .day { position:sticky; top:28px; z-index:3; padding:5px 10px; border-bottom:1px solid var(--border); color:var(--muted); background:var(--bg); font-size:.72rem; font-weight:800; }
+    .row { min-height:34px; border-bottom:1px solid var(--border); font-size:.8rem; } .row:last-child { border-bottom:0; } .row:hover { background:var(--primary-soft); }
+    .row.ok { background:var(--success-soft); box-shadow:inset 3px 0 var(--success); } .row.tried { opacity:.42; } .row.tried:hover { opacity:.75; }
+    .time,.source,.replies { color:var(--muted); font-size:.75rem; font-variant-numeric:tabular-nums; } .replies { text-align:right; }
+    .code { border:0; padding:6px 0; color:var(--ink); background:transparent; cursor:pointer; text-align:left; font:800 .98rem ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; letter-spacing:.08em; } .code:hover { color:var(--primary); }
+    .code.copied { color:var(--success); } .code.copied:after { content:" ✓"; font-size:.72rem; }
+    .source { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; } .source a { color:var(--primary); text-decoration:none; }
+    .status { white-space:nowrap; font-size:.72rem; font-weight:800; } .status.ok { color:var(--success); } .status.warn { color:var(--warn); } .status.bad { color:var(--danger); }
+    .mark { width:26px; height:26px; border:0; border-radius:6px; color:var(--subtle); background:transparent; cursor:pointer; font-size:.9rem; } .mark:hover { color:var(--danger); background:rgba(255,59,48,.08); } .mark.is-tried { color:var(--danger); }
+    .info { margin-top:28px; padding:22px 20px; border:1px solid var(--border); border-radius:var(--radius); background:var(--surface); box-shadow:var(--shadow); }
+    .info h2 { margin-bottom:10px; font-size:1.05rem; } .info p,.info li { color:var(--muted); font-size:.88rem; line-height:1.7; } .info ol { margin:6px 0; padding-left:1.2rem; }
+    .warning { margin-top:12px; padding:12px 14px; border-radius:10px; background:rgba(255,149,0,.08); } .warning strong { display:block; margin-bottom:3px; color:var(--warn); }
+    .empty { padding:48px 16px; color:var(--muted); text-align:center; } footer { padding:32px 16px 40px; color:var(--subtle); font-size:.78rem; text-align:center; }
+    .scroll-top { display:none; position:fixed; right:24px; bottom:24px; z-index:10; width:42px; height:42px; border:0; border-radius:50%; color:#fff; background:var(--primary); cursor:pointer; font-size:1.1rem; box-shadow:0 4px 14px rgba(88,86,214,.35); } .scroll-top.show { display:block; }
+    .toast { position:fixed; left:50%; bottom:80px; z-index:20; transform:translate(-50%,16px); padding:10px 22px; border-radius:999px; color:var(--bg); background:var(--ink); font-size:.85rem; font-weight:700; opacity:0; transition:.25s; pointer-events:none; } .toast.show { transform:translate(-50%,0); opacity:1; }
+    @media (max-width:540px) { .hero { padding:18px 14px 27px; } h1 { font-size:1.2rem; } .stat-value { font-size:1rem; } .stat-label { font-size:.62rem; } .board { width:100%; } .board-cols { grid-template-columns:40px minmax(0,1fr) 4.2em 2.4em 28px; } .source,.source-head { display:none; } .code { font-size:.92rem; letter-spacing:.06em; } .info { padding:18px 16px; } }
+  </style>
+</head>
+<body>
+  <header class="hero"><div class="hero-inner"><div class="logo">✦</div><h1>邀请码社区看板</h1><p class="tagline">社区公开收集的邀请码信息<br>每 5 分钟巡检 · 本页每分钟自动刷新</p></div></header>
+  <section class="stats-wrap"><div class="stats"><div class="stat"><div id="total" class="stat-value primary">—</div><div class="stat-label">收录</div></div><div class="stat"><div id="available" class="stat-value success">—</div><div class="stat-label">可能可用</div></div><div class="stat"><div id="used" class="stat-value warn">—</div><div class="stat-label">已用</div></div><div class="stat"><div id="updated" class="stat-value" style="font-size:.85rem">—</div><div class="stat-label">更新</div></div></div></section>
+  <main class="container"><div id="filters" class="filters" role="tablist" aria-label="按状态筛选"></div><div id="board" class="board"><div class="empty">正在加载…</div></div>
+    <section class="info"><h2>💡 使用提示</h2><p>点击邀请码即可复制；如果你已经试过且不可用，可以点击右侧 × 标记。这个标记只保存在你的浏览器里。</p><div class="warning"><strong>⚠️ 谨防诈骗</strong><p>不要为公开邀请码付费，也不要提交账号密码或支付押金。</p></div></section>
+    <section class="info"><h2>📋 站点说明</h2><p>本站为社区信息整理工具，不代表任何官方机构。数据来自公开分享内容，邀请码可能随时失效，请以原帖和实际结果为准。</p></section>
+  </main>
+  <footer>静态托管于 GitHub Pages · 数据来自公开分享内容</footer>
+  <button id="scrollTop" class="scroll-top" aria-label="回到顶部">↑</button><div id="toast" class="toast"></div>
+  <script>
+    const DATA_URL = "codes.json", TRIED_KEY = "invite-board-tried";
+    const labels = { maybe_available:"可能可用", maybe_used:"已用", confirmed_used:"确认" }, classes = { maybe_available:"ok", maybe_used:"warn", confirmed_used:"bad" };
+    let payload = { lastUpdated:"", codes:[] }, filter = "all", copied = null, timer = null;
+    let tried = (() => { try { const x = JSON.parse(localStorage.getItem(TRIED_KEY) || "[]"); return Array.isArray(x) ? x.filter(v => typeof v === "string") : []; } catch { return []; } })();
+    const esc = v => String(v ?? "").replace(/[&<>\"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c]));
+    const dateKey = v => (String(v || "").match(/^(\d{4}-\d{2}-\d{2})/) || [,"未知日期"])[1];
+    function formatDate(k) { if (k === "未知日期") return k; const d = new Date(k + "T00:00:00+08:00"), now = new Date(), today = now.toLocaleDateString("sv-SE", { timeZone:"Asia/Shanghai" }); if(k === today) return "今天 · " + k; return ["周日","周一","周二","周三","周四","周五","周六"][d.getDay()] + " · " + k; }
+    function counts() { const c = payload.codes || []; return { all:c.length, maybe_available:c.filter(x=>x.status==="maybe_available").length, maybe_used:c.filter(x=>x.status==="maybe_used").length, confirmed_used:c.filter(x=>x.status==="confirmed_used").length, tried:c.filter(x=>tried.includes(x.code)).length }; }
+    function filtered() { const c=payload.codes||[]; return filter==="all"?c:filter==="tried"?c.filter(x=>tried.includes(x.code)):c.filter(x=>x.status===filter); }
+    function toast(text) { const e=document.querySelector("#toast"); e.textContent=text; e.classList.add("show"); setTimeout(()=>e.classList.remove("show"),1800); }
+    async function copy(code) { try { await navigator.clipboard.writeText(code); copied=code; clearTimeout(timer); timer=setTimeout(()=>{copied=null;render();},1800); toast("已复制 " + code); render(); } catch { toast("复制失败，请手动选择"); } }
+    function renderStats() { const c=counts(); document.querySelector("#total").textContent=c.all; document.querySelector("#available").textContent=c.maybe_available; document.querySelector("#used").textContent=c.maybe_used+c.confirmed_used; const t=payload.lastUpdated||"—"; document.querySelector("#updated").textContent=(t.match(/(\d{2}:\d{2})/)||[,t])[1]; }
+    function renderFilters() { const c=counts(), opts=[["all","全部",c.all],["maybe_available","🟢 可能可用",c.maybe_available],["maybe_used","🟡 已用",c.maybe_used],["confirmed_used","🔴 确认",c.confirmed_used],["tried","🚫 试过",c.tried]]; document.querySelector("#filters").innerHTML=opts.map(([v,l,n])=>`<button class="chip" data-filter="${v}" aria-pressed="${filter===v}">${l} ${n}</button>`).join(""); }
+    function renderBoard() { const rows=filtered(), el=document.querySelector("#board"); if(!rows.length){el.innerHTML='<div class="empty">🔍<br>暂无符合筛选条件的邀请码</div>';return;} let html='<div class="board-cols head"><span>时间</span><span>邀请码</span><span>状态</span><span class="source-head">来源</span><span>回复</span><span></span></div>', last=""; for(const item of rows){ const day=dateKey(item.postedAt); if(day!==last){last=day;html+=`<div class="day">${formatDate(day)}</div>`;} const isTried=tried.includes(item.code), cls=isTried?"tried":item.status==="maybe_available"?"ok":"", st=isTried?"试过":(labels[item.status]||esc(item.status)); const stCls=isTried?"bad":(classes[item.status]||"warn"); const time=(String(item.postedAt||"").match(/(\d{2}:\d{2})/)||[,esc(item.postedAt)])[1]; const href=/^https:\/\//i.test(item.postUrl||"")?esc(item.postUrl):"#"; html+=`<div class="board-cols row ${cls}"><span class="time">${time}</span><button class="code${copied===item.code?" copied":""}" data-copy="${esc(item.code)}">${esc(item.code)}</button><span class="status ${stCls}">${st}</span><span class="source"><a href="${href}" target="_blank" rel="noopener">@${esc(item.author||"原帖")}</a></span><span class="replies">${Number.isFinite(Number(item.replyCount))?Number(item.replyCount):0}</span><button class="mark${isTried?" is-tried":""}" data-tried="${esc(item.code)}" aria-label="${isTried?"取消标记":"标记不可用"}">${isTried?"↩":"×"}</button></div>`;} el.innerHTML=html; }
+    function render(){renderStats();renderFilters();renderBoard();}
+    async function load(){ const r=await fetch(DATA_URL+"?t="+Date.now(),{cache:"no-store"}); if(!r.ok)throw Error(r.status); payload=await r.json(); render(); }
+    document.querySelector("#filters").addEventListener("click",e=>{const b=e.target.closest("[data-filter]");if(b){filter=b.dataset.filter;render();}});
+    document.querySelector("#board").addEventListener("click",e=>{const c=e.target.closest("[data-copy]"),m=e.target.closest("[data-tried]");if(c){copy(c.dataset.copy);return;}if(m){const code=m.dataset.tried;tried=tried.includes(code)?tried.filter(x=>x!==code):[...tried,code];try{localStorage.setItem(TRIED_KEY,JSON.stringify(tried));}catch{}render();}});
+    const top=document.querySelector("#scrollTop"); addEventListener("scroll",()=>top.classList.toggle("show",scrollY>400),{passive:true}); top.addEventListener("click",()=>scrollTo({top:0,behavior:"smooth"}));
+    load().catch(()=>{document.querySelector("#updated").textContent="载入失败";document.querySelector("#board").innerHTML='<div class="empty">数据加载失败，请稍后重试</div>';}); setInterval(()=>load().catch(()=>{}),60000);
+  </script>
+</body>
+</html>
+

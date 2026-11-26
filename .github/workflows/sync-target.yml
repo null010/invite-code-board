@@ -7,6 +7,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: sync-target-codes
@@ -25,6 +27,7 @@ jobs:
       - name: Commit changed data
         run: |
           if git diff --quiet -- codes.json; then
+            echo "DATA_CHANGED=false" >> "$GITHUB_ENV"
             echo "No data changes"
             exit 0
           fi
@@ -33,4 +36,23 @@ jobs:
           git add codes.json
           git commit -m "chore: sync target invite codes"
           git push
+          echo "DATA_CHANGED=true" >> "$GITHUB_ENV"
 
+      - name: Configure Pages
+        if: env.DATA_CHANGED == 'true'
+        uses: actions/configure-pages@v5
+
+      - name: Upload site
+        if: env.DATA_CHANGED == 'true'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - name: Wait for artifact registration
+        if: env.DATA_CHANGED == 'true'
+        run: sleep 10
+
+      - name: Deploy to Pages
+        if: env.DATA_CHANGED == 'true'
+        id: deployment
+        uses: actions/deploy-pages@v4

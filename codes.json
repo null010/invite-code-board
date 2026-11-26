@@ -1,108 +1,173 @@
 {
-  "lastUpdated": "2026-11-26 12:13 北京时间",
-  "lastSinceId": "2125803416416841851",
+  "lastUpdated": "2026-11-26 13:24 北京时间",
+  "lastSinceId": "2125815674459021816",
   "codes": [
     {
+      "code": "95AYKL",
+      "postId": "2125813401184325688",
+      "author": "jun745890",
+      "postUrl": "https://x.com/jun745890/status/2125813401184325688",
+      "postedAt": "2026-11-26 12:46:25 北京时间",
+      "postedAtUtc": "2026-11-26T04:46:25.000Z",
+      "replyCount": 9,
+      "status": "maybe_used",
+      "expires": "2026-11-28 12:44"
+    },
+    {
+      "code": "ANYONE",
+      "postId": "",
+      "author": "社区分享",
+      "postUrl": "https://activity.doubao.com/ug/invite-share/ANYONE",
+      "postedAt": "2026-11-26 12:21:49 北京时间",
+      "postedAtUtc": "2026-11-26T04:21:49.000Z",
+      "replyCount": 0,
+      "status": "maybe_available",
+      "officialUrl": "https://activity.doubao.com/ug/invite-share/ANYONE",
+      "note": "新邀请"
+    },
+    {
+      "code": "JENSEN",
+      "postId": "",
+      "author": "社区分享",
+      "postUrl": "https://activity.doubao.com/ug/invite-share/JENSEN",
+      "postedAt": "2026-11-26 12:21:49 北京时间",
+      "postedAtUtc": "2026-11-26T04:21:49.000Z",
+      "replyCount": 0,
+      "status": "maybe_available",
+      "officialUrl": "https://activity.doubao.com/ug/invite-share/JENSEN",
+      "note": "新邀请"
+    },
+    {
+      "code": "JACKET",
+      "postId": "",
+      "author": "社区分享",
+      "postUrl": "https://activity.doubao.com/ug/invite-share/JACKET",
+      "postedAt": "2026-11-26 12:21:49 北京时间",
+      "postedAtUtc": "2026-11-26T04:21:49.000Z",
+      "replyCount": 0,
+      "status": "maybe_available",
+      "officialUrl": "https://activity.doubao.com/ug/invite-share/JACKET",
+      "note": "新邀请"
+    },
+    {
       "code": "CHROME",
-      "postId": "2125801721129828352",
-      "author": "weichen_ink",
-      "postUrl": "https://x.com/weichen_ink/status/2125801721129828352",
+      "postId": "",
+      "author": "社区分享",
+      "postUrl": "https://activity.doubao.com/ug/invite-share/CHROME",
       "postedAt": "2026-11-26 12:00:00 北京时间",
       "postedAtUtc": "2026-11-26T04:00:00.000Z",
       "replyCount": 0,
-      "status": "maybe_available"
+      "status": "maybe_available",
+      "officialUrl": "https://activity.doubao.com/ug/invite-share/CHROME",
+      "note": "新邀请"
     },
     {
       "code": "C8R5SV",
-      "postId": "2125801017237475751",
-      "author": "yiming_Falcon",
-      "postUrl": "https://x.com/yiming_Falcon/status/2125801017237475751",
+      "postId": "",
+      "author": "社区分享",
+      "postUrl": "https://activity.doubao.com/ug/invite-share/C8R5SV",
       "postedAt": "2026-11-26 11:57:12 北京时间",
       "postedAtUtc": "2026-11-26T03:57:12.000Z",
       "replyCount": 0,
-      "status": "maybe_available"
+      "status": "maybe_available",
+      "officialUrl": "https://activity.doubao.com/ug/invite-share/C8R5SV",
+      "note": "新邀请"
     },
     {
       "code": "LOSING",
-      "postId": "2125793036814717293",
-      "author": "Budgetlander",
-      "postUrl": "https://x.com/Budgetlander/status/2125793036814717293",
+      "postId": "",
+      "author": "社区分享",
+      "postUrl": "https://activity.doubao.com/ug/invite-share/LOSING",
       "postedAt": "2026-11-26 11:25:29 北京时间",
       "postedAtUtc": "2026-11-26T03:25:29.000Z",
       "replyCount": 0,
-      "status": "maybe_available"
+      "status": "maybe_available",
+      "officialUrl": "https://activity.doubao.com/ug/invite-share/LOSING",
+      "note": "新邀请"
     },
     {
       "code": "NOBODY",
-      "postId": "2125793036814717293",
-      "author": "Budgetlander",
-      "postUrl": "https://x.com/Budgetlander/status/2125793036814717293",
+      "postId": "",
+      "author": "社区分享",
+      "postUrl": "https://activity.doubao.com/ug/invite-share/NOBODY",
       "postedAt": "2026-11-26 11:25:29 北京时间",
       "postedAtUtc": "2026-11-26T03:25:29.000Z",
       "replyCount": 0,
-      "status": "maybe_available"
+      "status": "maybe_available",
+      "officialUrl": "https://activity.doubao.com/ug/invite-share/NOBODY",
+      "note": "新邀请"
     },
     {
       "code": "POSTED",
-      "postId": "2125793036814717293",
-      "author": "Budgetlander",
-      "postUrl": "https://x.com/Budgetlander/status/2125793036814717293",
+      "postId": "",
+      "author": "社区分享",
+      "postUrl": "https://activity.doubao.com/ug/invite-share/POSTED",
       "postedAt": "2026-11-26 11:25:29 北京时间",
       "postedAtUtc": "2026-11-26T03:25:29.000Z",
       "replyCount": 0,
-      "status": "maybe_available"
+      "status": "maybe_available",
+      "officialUrl": "https://activity.doubao.com/ug/invite-share/POSTED",
+      "note": "新邀请"
     },
     {
       "code": "ENTIRE",
-      "postId": "2125793036814717293",
-      "author": "Budgetlander",
-      "postUrl": "https://x.com/Budgetlander/status/2125793036814717293",
+      "postId": "",
+      "author": "社区分享",
+      "postUrl": "https://activity.doubao.com/ug/invite-share/ENTIRE",
       "postedAt": "2026-11-26 11:25:29 北京时间",
       "postedAtUtc": "2026-11-26T03:25:29.000Z",
       "replyCount": 0,
-      "status": "maybe_available"
+      "status": "maybe_available",
+      "officialUrl": "https://activity.doubao.com/ug/invite-share/ENTIRE",
+      "note": "新邀请"
     },
     {
       "code": "CAREER",
-      "postId": "2125793036814717293",
-      "author": "Budgetlander",
-      "postUrl": "https://x.com/Budgetlander/status/2125793036814717293",
+      "postId": "",
+      "author": "社区分享",
+      "postUrl": "https://activity.doubao.com/ug/invite-share/CAREER",
       "postedAt": "2026-11-26 11:25:29 北京时间",
       "postedAtUtc": "2026-11-26T03:25:29.000Z",
       "replyCount": 0,
-      "status": "maybe_available"
+      "status": "maybe_available",
+      "officialUrl": "https://activity.doubao.com/ug/invite-share/CAREER",
+      "note": "新邀请"
     },
     {
       "code": "UJSBEG",
-      "postId": "2125602099316855148",
-      "author": "yituihi",
-      "postUrl": "https://x.com/yituihi/status/2125602099316855148",
+      "postId": "",
+      "author": "社区分享",
+      "postUrl": "https://activity.doubao.com/ug/invite-share/UJSBEG",
       "postedAt": "2026-11-25 22:46:46 北京时间",
       "postedAtUtc": "2026-11-25T14:46:46.000Z",
-      "replyCount": 4,
-      "status": "maybe_used"
+      "replyCount": 0,
+      "status": "maybe_available",
+      "officialUrl": "https://activity.doubao.com/ug/invite-share/UJSBEG",
+      "note": "新邀请"
     },
     {
       "code": "BC5RKZ",
-      "postId": "2125599331877269732",
-      "author": "SSVDVT",
-      "postUrl": "https://x.com/SSVDVT/status/2125599331877269732",
+      "postId": "",
+      "author": "社区分享",
+      "postUrl": "https://activity.doubao.com/ug/invite-share/BC5RKZ",
       "postedAt": "2026-11-25 22:35:47 北京时间",
       "postedAtUtc": "2026-11-25T14:35:47.000Z",
-      "replyCount": 3,
-      "status": "maybe_used",
-      "expires": "2026-11-27 22:07"
+      "replyCount": 0,
+      "status": "maybe_available",
+      "officialUrl": "https://activity.doubao.com/ug/invite-share/BC5RKZ",
+      "note": "新邀请"
     },
     {
       "code": "9HRUE3",
-      "postId": "2125598146088841313",
-      "author": "daiguaxiaojian",
-      "postUrl": "https://x.com/daiguaxiaojian/status/2125598146088841313",
+      "postId": "",
+      "author": "社区分享",
+      "postUrl": "https://activity.doubao.com/ug/invite-share/9HRUE3",
       "postedAt": "2026-11-25 22:31:04 北京时间",
       "postedAtUtc": "2026-11-25T14:31:04.000Z",
-      "replyCount": 1,
-      "status": "maybe_used",
-      "expires": "2026-11-27 22:30"
+      "replyCount": 0,
+      "status": "maybe_available",
+      "officialUrl": "https://activity.doubao.com/ug/invite-share/9HRUE3",
+      "note": "新邀请"
     },
     {
       "code": "8YG2W2",
@@ -111,8 +176,8 @@
       "postUrl": "https://x.com/hypovv/status/2125568772081864837",
       "postedAt": "2026-11-25 20:34:21 北京时间",
       "postedAtUtc": "2026-11-25T12:34:21.000Z",
-      "replyCount": 1,
-      "status": "maybe_used",
+      "replyCount": 0,
+      "status": "maybe_available",
       "expires": "2026-11-26 11:04"
     },
     {
@@ -980,6 +1045,25 @@
       "status": "maybe_used"
     },
     {
+      "code": "A7K9P2",
+      "postId": "demo-1",
+      "author": "community_demo",
+      "postUrl": "https://example.com/",
+      "postedAt": "2026-11-25 18:40:00 北京时间",
+      "replyCount": 0,
+      "status": "maybe_available"
+    },
+    {
+      "code": "M-4Q8ZTR",
+      "postId": "demo-2",
+      "author": "share_user",
+      "postUrl": "https://example.com/",
+      "postedAt": "2026-11-25 17:18:00 北京时间",
+      "replyCount": 0,
+      "status": "maybe_available",
+      "expires": "2026-11-27 23:59"
+    },
+    {
       "code": "3KRVX4",
       "postId": "2125363835641180486",
       "author": "lqi54691",
@@ -988,6 +1072,162 @@
       "postedAtUtc": "2026-11-24T23:00:00.000Z",
       "replyCount": 1,
       "status": "maybe_used"
+    },
+    {
+      "code": "UAKHNJ",
+      "postId": "",
+      "author": "社区分享",
+      "postUrl": "https://activity.doubao.com/ug/invite-share/UAKHNJ",
+      "postedAt": "2026-11-25 06:28:00 北京时间",
+      "postedAtUtc": "2026-11-24T22:28:00.000Z",
+      "replyCount": 0,
+      "status": "maybe_available",
+      "officialUrl": "https://activity.doubao.com/ug/invite-share/UAKHNJ",
+      "note": "新邀请"
+    },
+    {
+      "code": "YAUJQF",
+      "postId": "",
+      "author": "社区分享",
+      "postUrl": "https://activity.doubao.com/ug/invite-share/YAUJQF",
+      "postedAt": "2026-11-25 06:19:33 北京时间",
+      "postedAtUtc": "2026-11-24T22:19:33.000Z",
+      "replyCount": 0,
+      "status": "maybe_available",
+      "officialUrl": "https://activity.doubao.com/ug/invite-share/YAUJQF",
+      "note": "新邀请"
+    },
+    {
+      "code": "NSIMPG",
+      "postId": "",
+      "author": "社区分享",
+      "postUrl": "https://activity.doubao.com/ug/invite-share/NSIMPG",
+      "postedAt": "2026-11-25 06:19:33 北京时间",
+      "postedAtUtc": "2026-11-24T22:19:33.000Z",
+      "replyCount": 0,
+      "status": "maybe_available",
+      "officialUrl": "https://activity.doubao.com/ug/invite-share/NSIMPG",
+      "note": "新邀请"
+    },
+    {
+      "code": "DEF04J",
+      "postId": "",
+      "author": "社区分享",
+      "postUrl": "https://activity.doubao.com/ug/invite-share/DEF04J",
+      "postedAt": "2026-11-25 05:30:00 北京时间",
+      "postedAtUtc": "2026-11-24T21:30:00.000Z",
+      "replyCount": 0,
+      "status": "maybe_available",
+      "officialUrl": "https://activity.doubao.com/ug/invite-share/DEF04J",
+      "note": "新邀请"
+    },
+    {
+      "code": "SJDISU",
+      "postId": "",
+      "author": "社区分享",
+      "postUrl": "https://activity.doubao.com/ug/invite-share/SJDISU",
+      "postedAt": "2026-11-25 05:17:00 北京时间",
+      "postedAtUtc": "2026-11-24T21:17:00.000Z",
+      "replyCount": 0,
+      "status": "maybe_available",
+      "officialUrl": "https://activity.doubao.com/ug/invite-share/SJDISU",
+      "note": "新邀请"
+    },
+    {
+      "code": "DWLLLR",
+      "postId": "",
+      "author": "社区分享",
+      "postUrl": "https://activity.doubao.com/ug/invite-share/DWLLLR",
+      "postedAt": "2026-11-25 05:04:00 北京时间",
+      "postedAtUtc": "2026-11-24T21:04:00.000Z",
+      "replyCount": 0,
+      "status": "maybe_available",
+      "officialUrl": "https://activity.doubao.com/ug/invite-share/DWLLLR",
+      "note": "新邀请"
+    },
+    {
+      "code": "INASBN",
+      "postId": "",
+      "author": "社区分享",
+      "postUrl": "https://activity.doubao.com/ug/invite-share/INASBN",
+      "postedAt": "2026-11-25 05:04:00 北京时间",
+      "postedAtUtc": "2026-11-24T21:04:00.000Z",
+      "replyCount": 0,
+      "status": "maybe_available",
+      "officialUrl": "https://activity.doubao.com/ug/invite-share/INASBN",
+      "note": "新邀请"
+    },
+    {
+      "code": "CKIWZL",
+      "postId": "",
+      "author": "社区分享",
+      "postUrl": "https://activity.doubao.com/ug/invite-share/CKIWZL",
+      "postedAt": "2026-11-25 04:44:00 北京时间",
+      "postedAtUtc": "2026-11-24T20:44:00.000Z",
+      "replyCount": 0,
+      "status": "maybe_available",
+      "officialUrl": "https://activity.doubao.com/ug/invite-share/CKIWZL",
+      "note": "新邀请"
+    },
+    {
+      "code": "DEF0C1",
+      "postId": "",
+      "author": "社区分享",
+      "postUrl": "https://activity.doubao.com/ug/invite-share/DEF0C1",
+      "postedAt": "2026-11-25 04:44:00 北京时间",
+      "postedAtUtc": "2026-11-24T20:44:00.000Z",
+      "replyCount": 0,
+      "status": "maybe_available",
+      "officialUrl": "https://activity.doubao.com/ug/invite-share/DEF0C1",
+      "note": "新邀请"
+    },
+    {
+      "code": "DEF0DG",
+      "postId": "",
+      "author": "社区分享",
+      "postUrl": "https://activity.doubao.com/ug/invite-share/DEF0DG",
+      "postedAt": "2026-11-25 04:37:00 北京时间",
+      "postedAtUtc": "2026-11-24T20:37:00.000Z",
+      "replyCount": 0,
+      "status": "maybe_available",
+      "officialUrl": "https://activity.doubao.com/ug/invite-share/DEF0DG",
+      "note": "新邀请"
+    },
+    {
+      "code": "DEF0DF",
+      "postId": "",
+      "author": "社区分享",
+      "postUrl": "https://activity.doubao.com/ug/invite-share/DEF0DF",
+      "postedAt": "2026-11-25 04:37:00 北京时间",
+      "postedAtUtc": "2026-11-24T20:37:00.000Z",
+      "replyCount": 0,
+      "status": "maybe_available",
+      "officialUrl": "https://activity.doubao.com/ug/invite-share/DEF0DF",
+      "note": "新邀请"
+    },
+    {
+      "code": "DEF0EK",
+      "postId": "",
+      "author": "社区分享",
+      "postUrl": "https://activity.doubao.com/ug/invite-share/DEF0EK",
+      "postedAt": "2026-11-25 04:33:00 北京时间",
+      "postedAtUtc": "2026-11-24T20:33:00.000Z",
+      "replyCount": 0,
+      "status": "maybe_available",
+      "officialUrl": "https://activity.doubao.com/ug/invite-share/DEF0EK",
+      "note": "新邀请"
+    },
+    {
+      "code": "DEF0E4",
+      "postId": "",
+      "author": "社区分享",
+      "postUrl": "https://activity.doubao.com/ug/invite-share/DEF0E4",
+      "postedAt": "2026-11-25 04:33:00 北京时间",
+      "postedAtUtc": "2026-11-24T20:33:00.000Z",
+      "replyCount": 0,
+      "status": "maybe_available",
+      "officialUrl": "https://activity.doubao.com/ug/invite-share/DEF0E4",
+      "note": "新邀请"
     },
     {
       "code": "NA5KBP",
@@ -1008,6 +1248,26 @@
       "postedAtUtc": "2026-11-24T18:09:31.000Z",
       "replyCount": 3,
       "status": "maybe_used"
+    },
+    {
+      "code": "THREADS",
+      "postId": "2125285738707374532",
+      "author": "yunche1bxh",
+      "postUrl": "https://x.com/yunche1bxh/status/2125285738707374532",
+      "postedAt": "2026-11-25 01:49:40 北京时间",
+      "postedAtUtc": "2026-11-24T17:49:40.000Z",
+      "replyCount": 0,
+      "status": "maybe_available"
+    },
+    {
+      "code": "OPUS5",
+      "postId": "2125278930991300622",
+      "author": "XingYao47854",
+      "postUrl": "https://x.com/XingYao47854/status/2125278930991300622",
+      "postedAt": "2026-11-25 01:22:37 北京时间",
+      "postedAtUtc": "2026-11-24T17:22:37.000Z",
+      "replyCount": 0,
+      "status": "maybe_available"
     },
     {
       "code": "J8N4QX",
@@ -1368,6 +1628,26 @@
       "postedAtUtc": "2026-11-24T17:06:00.000Z",
       "replyCount": 1,
       "status": "maybe_used"
+    },
+    {
+      "code": "JOHNEEWC",
+      "postId": "2125274743335178718",
+      "author": "zhnglyng385641",
+      "postUrl": "https://x.com/zhnglyng385641/status/2125274743335178718",
+      "postedAt": "2026-11-25 01:05:59 北京时间",
+      "postedAtUtc": "2026-11-24T17:05:59.000Z",
+      "replyCount": 2,
+      "status": "maybe_used"
+    },
+    {
+      "code": "AGNET",
+      "postId": "2125271264181059660",
+      "author": "ClareChan95",
+      "postUrl": "https://x.com/ClareChan95/status/2125271264181059660",
+      "postedAt": "2026-11-25 00:52:09 北京时间",
+      "postedAtUtc": "2026-11-24T16:52:09.000Z",
+      "replyCount": 0,
+      "status": "maybe_available"
     },
     {
       "code": "R8K4XM",
@@ -1840,6 +2120,16 @@
       "status": "maybe_used"
     },
     {
+      "code": "CODEX",
+      "postId": "2125262887950426463",
+      "author": "yituihi",
+      "postUrl": "https://x.com/yituihi/status/2125262887950426463",
+      "postedAt": "2026-11-25 00:18:52 北京时间",
+      "postedAtUtc": "2026-11-24T16:18:52.000Z",
+      "replyCount": 5,
+      "status": "maybe_used"
+    },
+    {
       "code": "K7M4PX",
       "postId": "2125262086251106747",
       "author": "yituihi",
@@ -2220,12 +2510,112 @@
       "status": "maybe_used"
     },
     {
+      "code": "CNMLGB",
+      "postId": "2125250624283693260",
+      "author": "yunche1bxh",
+      "postUrl": "https://x.com/yunche1bxh/status/2125250624283693260",
+      "postedAt": "2026-11-24 23:30:08 北京时间",
+      "postedAtUtc": "2026-11-24T15:30:08.000Z",
+      "replyCount": 1,
+      "status": "maybe_used"
+    },
+    {
+      "code": "PERSONAL",
+      "postId": "2125249418492522657",
+      "author": "bbkirstry",
+      "postUrl": "https://x.com/bbkirstry/status/2125249418492522657",
+      "postedAt": "2026-11-24 23:25:21 北京时间",
+      "postedAtUtc": "2026-11-24T15:25:21.000Z",
+      "replyCount": 27,
+      "status": "maybe_used"
+    },
+    {
+      "code": "BELIKE",
+      "postId": "2125246363223085207",
+      "author": "mohaixiaomhx",
+      "postUrl": "https://x.com/mohaixiaomhx/status/2125246363223085207",
+      "postedAt": "2026-11-24 23:13:12 北京时间",
+      "postedAtUtc": "2026-11-24T15:13:12.000Z",
+      "replyCount": 0,
+      "status": "maybe_available"
+    },
+    {
+      "code": "OPENAI",
+      "postId": "2125243266421641349",
+      "author": "JohnsonLay70702",
+      "postUrl": "https://x.com/JohnsonLay70702/status/2125243266421641349",
+      "postedAt": "2026-11-24 23:00:54 北京时间",
+      "postedAtUtc": "2026-11-24T15:00:54.000Z",
+      "replyCount": 1,
+      "status": "maybe_used"
+    },
+    {
+      "code": "TODAYAI",
+      "postId": "2125241949976510800",
+      "author": "chsengni",
+      "postUrl": "https://x.com/chsengni/status/2125241949976510800",
+      "postedAt": "2026-11-24 22:55:40 北京时间",
+      "postedAtUtc": "2026-11-24T14:55:40.000Z",
+      "replyCount": 2,
+      "status": "maybe_used"
+    },
+    {
+      "code": "LOGIN",
+      "postId": "2125241949976510800",
+      "author": "chsengni",
+      "postUrl": "https://x.com/chsengni/status/2125241949976510800",
+      "postedAt": "2026-11-24 22:55:40 北京时间",
+      "postedAtUtc": "2026-11-24T14:55:40.000Z",
+      "replyCount": 2,
+      "status": "maybe_used"
+    },
+    {
+      "code": "FLASH",
+      "postId": "2125241949976510800",
+      "author": "chsengni",
+      "postUrl": "https://x.com/chsengni/status/2125241949976510800",
+      "postedAt": "2026-11-24 22:55:40 北京时间",
+      "postedAtUtc": "2026-11-24T14:55:40.000Z",
+      "replyCount": 2,
+      "status": "maybe_used"
+    },
+    {
+      "code": "STORE",
+      "postId": "2125235698722906337",
+      "author": "Mirenshuaige",
+      "postUrl": "https://x.com/Mirenshuaige/status/2125235698722906337",
+      "postedAt": "2026-11-24 22:30:50 北京时间",
+      "postedAtUtc": "2026-11-24T14:30:50.000Z",
+      "replyCount": 0,
+      "status": "maybe_available"
+    },
+    {
+      "code": "GOOD1UCK",
+      "postId": "2125233065698160868",
+      "author": "johnsong2626",
+      "postUrl": "https://x.com/johnsong2626/status/2125233065698160868",
+      "postedAt": "2026-11-24 22:20:22 北京时间",
+      "postedAtUtc": "2026-11-24T14:20:22.000Z",
+      "replyCount": 0,
+      "status": "maybe_available"
+    },
+    {
       "code": "8964AA",
       "postId": "2125231989183889428",
       "author": "aixparty",
       "postUrl": "https://x.com/aixparty/status/2125231989183889428",
       "postedAt": "2026-11-24 22:16:05 北京时间",
       "postedAtUtc": "2026-11-24T14:16:05.000Z",
+      "replyCount": 0,
+      "status": "maybe_available"
+    },
+    {
+      "code": "LINUX",
+      "postId": "2125231676741882168",
+      "author": "yayajj666",
+      "postUrl": "https://x.com/yayajj666/status/2125231676741882168",
+      "postedAt": "2026-11-24 22:14:51 北京时间",
+      "postedAtUtc": "2026-11-24T14:14:51.000Z",
       "replyCount": 0,
       "status": "maybe_available"
     },
@@ -2268,6 +2658,16 @@
       "postedAtUtc": "2026-11-24T14:05:20.000Z",
       "replyCount": 1,
       "status": "maybe_used"
+    },
+    {
+      "code": "AGENT",
+      "postId": "2125228731648401502",
+      "author": "Mirenshuaige",
+      "postUrl": "https://x.com/Mirenshuaige/status/2125228731648401502",
+      "postedAt": "2026-11-24 22:03:09 北京时间",
+      "postedAtUtc": "2026-11-24T14:03:09.000Z",
+      "replyCount": 0,
+      "status": "maybe_available"
     },
     {
       "code": "ZZNVVB",
@@ -2361,6 +2761,16 @@
       "status": "maybe_used"
     },
     {
+      "code": "N2W48",
+      "postId": "2125202674324746588",
+      "author": "rongrongone",
+      "postUrl": "https://x.com/rongrongone/status/2125202674324746588",
+      "postedAt": "2026-11-24 20:19:36 北京时间",
+      "postedAtUtc": "2026-11-24T12:19:36.000Z",
+      "replyCount": 0,
+      "status": "maybe_available"
+    },
+    {
       "code": "Y8MCTW",
       "postId": "2125202470238580807",
       "author": "XiaoZhi_AILab",
@@ -2442,6 +2852,16 @@
       "replyCount": 0,
       "status": "maybe_available",
       "expires": "2026-11-26 18:35"
+    },
+    {
+      "code": "KFCDD",
+      "postId": "2125174734153470047",
+      "author": "kuritian24",
+      "postUrl": "https://x.com/kuritian24/status/2125174734153470047",
+      "postedAt": "2026-11-24 18:28:35 北京时间",
+      "postedAtUtc": "2026-11-24T10:28:35.000Z",
+      "replyCount": 4,
+      "status": "maybe_used"
     },
     {
       "code": "UGM4F5",
@@ -2654,6 +3074,35 @@
       "postedAtUtc": "2026-11-24T08:17:30.000Z",
       "replyCount": 0,
       "status": "maybe_available"
+    },
+    {
+      "code": "KSKBL",
+      "postId": "2125141012570087692",
+      "author": "rmafr10",
+      "postUrl": "https://x.com/rmafr10/status/2125141012570087692",
+      "postedAt": "2026-11-24 16:14:35 北京时间",
+      "postedAtUtc": "2026-11-24T08:14:35.000Z",
+      "replyCount": 4,
+      "status": "maybe_used"
+    },
+    {
+      "code": "Q2N8LX",
+      "postId": "demo-3",
+      "author": "community_demo",
+      "postUrl": "https://example.com/",
+      "postedAt": "2026-11-24 22:06:00 北京时间",
+      "replyCount": 3,
+      "status": "maybe_used"
+    },
+    {
+      "code": "R5D1VC",
+      "postId": "demo-4",
+      "author": "community_demo",
+      "postUrl": "https://example.com/",
+      "postedAt": "2026-11-24 20:11:00 北京时间",
+      "replyCount": 8,
+      "status": "confirmed_used"
     }
   ]
 }
+

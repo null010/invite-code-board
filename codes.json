@@ -1,7 +1,19 @@
 {
-  "lastUpdated": "2026-11-26 13:24 北京时间",
-  "lastSinceId": "2125815674459021816",
+  "lastUpdated": "2026-11-26 14:21 北京时间",
+  "lastSinceId": "2125829423446507976",
   "codes": [
+    {
+      "code": "PEOPLE",
+      "postId": "",
+      "author": "社区分享",
+      "postUrl": "https://activity.doubao.com/ug/invite-share/PEOPLE",
+      "postedAt": "2026-11-26 13:47:57 北京时间",
+      "postedAtUtc": "2026-11-26T05:47:57.000Z",
+      "replyCount": 0,
+      "status": "maybe_available",
+      "officialUrl": "https://activity.doubao.com/ug/invite-share/PEOPLE",
+      "note": "新邀请"
+    },
     {
       "code": "95AYKL",
       "postId": "2125813401184325688",
@@ -3105,4 +3117,3 @@
     }
   ]
 }
-
